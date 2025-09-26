@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+div a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+div a i{
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 10px 10px ;
+}
+.card {
+  transition: 0.7s;
+ grid-area: 2;
+}
+.card:hover img {
+  transform: scale(1.4);
+}
+
+.container:last-child .card {
+  width: 350px;
+}
+.error h1 {
+  font-size: 5rem;
+}
+.fone{
+  display: flex;
+flex-flow: wrap;
+
+
+}
+ .cartp{
+    width: 200px;
+    height: 200px
+    
+  }
+    .remove{
+    width: 100px;
+    height: 50px;
+  }
+@media (max-width: 1300px) {
+  .error h1 {
+    font-size: 3rem;
+  }
+
+}
+@media (max-width:990px) and (min-width:400px) {
+  .container{
+    flex-flow: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartp{
+    width: 100%;
+  }
+.remove{
+  margin: 0 50px 0 0 ;
+}
+}
+@media (max-width:600px){
+  .cartp{
+    width: 100px;
+    height: 100px
+  }
+}
+@media (max-width:400px){
+  .cartp{
+    width: 80px;
+    height: 80px
+  }
+  .remove{
+    width: 80px;
+    height: 50px;
+  }
+}
